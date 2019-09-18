@@ -2,9 +2,7 @@
 # Developers : Moiseenko V. ,
 #              Torgasheva A.
 import turtle
-def square  (1,1,1):
-    '''
-    
-    :return:
-    '''
 
+def square  (x,y,a):
+    #TODO (Alena) ылаопыдщро
+    pass
