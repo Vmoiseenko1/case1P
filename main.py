@@ -1,14 +1,59 @@
 # Case- study #1
-# Developers : Moiseenko V. , Torgasheva A. , Seckov M.
+# Developers : Moiseenko V. (%),
+#              Torgasheva A. (%),
+#              Seckov M. (%)
+
 import turtle
-def red_triangle():
+
+def red_triangle (x, y, a, c, color):
     # TODO: (Alena) Paint a red triangle.
-pass
-def yellow_triangle():
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.color(color)
+    turtle.begin_fill()
+    turtle.forward(c)
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.end_fill()
+
+def yellow_triangle (x, y, a, c, color):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.color(color)
+    turtle.begin_fill()
+    turtle.right(45)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.forward(c)
+    turtle.right(90)
+    turtle.end_fill()
     #TODO: (Alena) Paint a yellow triangle.
-def rhomb():
+
+def rhomb (x, y, z, color):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.color(color)
+    turtle.begin_fill()
+    turtle.right(45)
+    turtle.forward(z)
+    turtle.right(90)
+    turtle.forward(z)
+    turtle.right(90)
+    turtle.forward(z)
+    turtle.right(90)
+    turtle.forward(z)
+    turtle.right(45)
+    turtle.end_fill()
     #TODO: (Alena) Paint a rhomb.
-pass
+
 def pink_triangle():
     #TODO: (Victoria) Paint a pink triangle.
 pass
