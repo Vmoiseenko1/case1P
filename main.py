@@ -160,7 +160,7 @@ def ship ():
     # green_parallelogram
     pass
 
-def main ()^
+def main ():
     pass
 
 main()
