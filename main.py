@@ -5,6 +5,7 @@
 
 import turtle
 
+# Figures:
 def red_triangle (x, y, a, c, color):
     # TODO: (Alena) Paint a red triangle.
     turtle.up()
@@ -67,7 +68,7 @@ def parallelogram():
     #TODO: (Maxim) Paint a parallelogram.
 pass
 
-
+# Pictures:
 def  rabbit():
     #TODO: (Victoria) Paint a rabbit.
 parallelogram()
@@ -78,6 +79,7 @@ yellow_triangle()
 blue_triangle()
 purple_triangle()
 pass
+
 def fish():
     #TODO: (Victoria) Paint a fish.
 red_triangle()
@@ -88,6 +90,7 @@ pink_triangle()
 purple_triangle()
 yellow_triangle()
 pass
+
 def spaceship():
     #TODO: (Victoria) Paint a spaceship.
 purple_triangle()
@@ -98,6 +101,7 @@ rhomb()
 parallelogram()
 purple_triangle()
 pass
+
 def helicopter():
     #TODO: (Alena) Paint a helicopter.
 blue_triangle()
@@ -108,6 +112,7 @@ rhomb()
 pink_triangle()
 purple_triangle()
 pass
+
 def cock():
     #TODO: (Alena) Paint a cock.
 
