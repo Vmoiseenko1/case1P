@@ -1,12 +1,12 @@
 # Case - study #1
 # Developers : Moiseenko V. (%),
 #              Torgasheva A. (%),
-#              Seckov M. (%)
+#              Setskov M. (%).
 
 import turtle
 
 # Figures:
-def up_triangle (x, y, a, c, color):
+def down_triangle (x, y, a, c, color):
     # TODO: (Alena) Paint a triangle.
     turtle.up()
     turtle.setposition(x, y)
@@ -21,7 +21,7 @@ def up_triangle (x, y, a, c, color):
     turtle.right(135)
     turtle.end_fill()
 
-def left_triangle (x, y, a, c, color):
+def right_triangle (x, y, a, c, color):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
