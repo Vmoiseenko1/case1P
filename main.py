@@ -59,20 +59,59 @@ def mid_triangle ():
     # TODO: (Victoria) Paint a triangle.
     pass
 
-def right_triangle ():
+def left_triangle ():
     #TODO: (Victoria) Paint a purple triangle.
     pass
 
-def down_triangle ():
+def up_triangle (x, y, a, c, color):
     # TODO: (Maxim) Paint an blue triangle.
-    pass
+        turtle.up()
+        turtle.setposition(x, y)
+        turtle.down()
+        turtle.color(color)
+        turtle.begin_fill()
+        turtle.forward(c)
+        turtle.left(135)
+        turtle.forward(a)
+        turtle.left(90)
+        turtle.forward(a)
+        turtle.left(135)
+        turtle.end_fill()
 
-def _parallelogram ():
+def _parallelogram (x, y, z, a, c, color):
     # TODO: (Maxim) Paint a parallelogram.
-    pass
-def square():
+        turtle.up()
+        turtle.setposition(x, y)
+        turtle.down()
+        turtle.left(z)
+        turtle.color(color)
+        turtle.begin_fill()
+        turtle.forward(c)
+        turtle.left(45)
+        turtle.forward(a)
+        turtle.left(135)
+        turtle.forward(c)
+        turtle.left(45)
+        turtle.forward(a)
+        turtle.end_fill()
+        turtle.left(135)
+        turtle.right(z)
+
+
+def square (x, y, z, a, color):
     #TODO (Maxim) Paint a square.
-pass
+        turtle.up()
+        turtle.setposition(x, y)
+        turtle.down()
+        turtle.right(z)
+        turtle.color(color)
+        turtle.begin_fill()
+        for i in range(4):
+            turtle.forward(a)
+            turtle.left(90)
+        turtle.end_fill()
+        turtle.left(z)
+
 
 # Pictures:
 def  rabbit ():
