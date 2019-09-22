@@ -38,7 +38,7 @@ def right_triangle (x, y, a, color):
        turtle.right(90)
        turtle.end_fill()
 
-def rhomb (x, y, z, color):
+def rhomb (x, y, a, color):
     # TODO: (Alena) Paint a rhomb.
        turtle.up()
        turtle.setposition(x, y)
@@ -46,13 +46,13 @@ def rhomb (x, y, z, color):
        turtle.color(color)
        turtle.begin_fill()
        turtle.right(45)
-       turtle.forward(z)
+       turtle.forward(a)
        turtle.right(90)
-       turtle.forward(z)
+       turtle.forward(a)
        turtle.right(90)
-       turtle.forward(z)
+       turtle.forward(a)
        turtle.right(90)
-       turtle.forward(z)
+       turtle.forward(a)
        turtle.right(45)
        turtle.end_fill()
 
@@ -184,14 +184,16 @@ def spaceship ():
 
 def helicopter ():
     # TODO: (Alena) Paint a helicopter.
-    # down_triangle()
-    # parallelogram()
-    # left_triangle()
-    # up_triangle()
-    # rhomb()
-    # mid_triangle()
-    # right_triangle()
-    pass
+    parallelogram(50, 100, 0, 50, 65, "#9ACD32")
+    up_triangle(45 - 70 * math.sqrt(2), 100, 70, "#DC143C")
+    right_triangle(50, 95, 100, "#00BFFF")
+    left_triangle(45, 95, 100, "#FFD700")
+    mid_triangle(40 - (100 * math.sqrt(2)) * 1 / 4 - 50 * math.sqrt(2),
+                 95 - (100 * math.sqrt(2)) * 3 / 4, 0, 50, "#FF8C00")
+    down_triangle(35 - (100 * math.sqrt(2)) * 1 / 4 - 50 * math.sqrt(2) * 3 / 2,
+                  95 - (100 * math.sqrt(2)) / 2, 50, "#EE82EE")
+    rhomb(30 - (100 * math.sqrt(2)) * 1 / 4 - 50 * math.sqrt(2) * 3 / 2 - 50 * math.sqrt(2) / 4,
+          95 - (100 * math.sqrt(2)) / 2 + 50 * math.sqrt(2) * 3 / 4, 50, "#9932CC")
 
 def cock ():
     # TODO: (Alena) Paint a cock.
@@ -250,6 +252,7 @@ def mainsquare ():
     mid_triangle(350+71, 250+68, 135, 70.71, 'green')
 
 def main ():
+    helicopter()
     cock()
     mainsquare()
 
