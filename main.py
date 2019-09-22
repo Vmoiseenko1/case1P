@@ -23,7 +23,7 @@ def down_triangle (x, y, a, color):
        turtle.end_fill()
 
 def right_triangle (x, y, a, color):
-    #TODO: (Alena) Paint a triangle.
+    # TODO: (Alena) Paint a triangle.
        turtle.up()
        turtle.setposition(x, y)
        turtle.down()
@@ -74,7 +74,7 @@ def mid_triangle(x, y, z, a, color):
     # TODO: (Victoria) Paint a triangle.
 
 def left_triangle(x, y, a, color):
-    #TODO: (Victoria) Paint a purple triangle.
+    # TODO: (Victoria) Paint a purple triangle.
        turtle.up()
        turtle.setposition(x,y)
        turtle.down()
@@ -125,7 +125,7 @@ def parallelogram (x, y, z, a, c, color):
 
 
 def square (x, y, z, a, color):
-    #TODO (Maxim) Paint a square.
+    # TODO (Maxim) Paint a square.
         turtle.up()
         turtle.setposition(x, y)
         turtle.down()
@@ -140,6 +140,7 @@ def square (x, y, z, a, color):
 
 
 def circle(x, y, a, color):
+    #TODO (Maxim) Paint a circle.
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
