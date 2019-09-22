@@ -4,16 +4,17 @@
 #              Setskov M. (%).
 
 import turtle
+import math
 
 # Figures:
-def down_triangle (x, y, a, c, color):
+def down_triangle (x, y, a, color):
     # TODO: (Alena) Paint a triangle.
        turtle.up()
        turtle.setposition(x, y)
        turtle.down()
        turtle.color(color)
        turtle.begin_fill()
-       turtle.forward(c)
+       turtle.forward(a*math.sqrt(2))
        turtle.right(135)
        turtle.forward(a)
        turtle.right(90)
@@ -21,7 +22,7 @@ def down_triangle (x, y, a, c, color):
        turtle.right(135)
        turtle.end_fill()
 
-def right_triangle (x, y, a, c, color):
+def right_triangle (x, y, a, color):
     #TODO: (Alena) Paint a triangle.
        turtle.up()
        turtle.setposition(x, y)
@@ -33,7 +34,7 @@ def right_triangle (x, y, a, c, color):
        turtle.right(90)
        turtle.forward(a)
        turtle.right(135)
-       turtle.forward(c)
+       turtle.forward(a*math.sqrt(2))
        turtle.right(90)
        turtle.end_fill()
 
@@ -55,14 +56,14 @@ def rhomb (x, y, z, color):
        turtle.right(45)
        turtle.end_fill()
 
-def mid_triangle(x,y,z,a,c,color):
+def mid_triangle(x, y, z, a, color):
        turtle.up()
        turtle.setposition(x, y)
        turtle.down()
        turtle.right(z)
        turtle.color(color)
        turtle.begin_fill()
-       turtle.forward(c)
+       turtle.forward(a*math.sqrt(2))
        turtle.left(135)
        turtle.forward(a)
        turtle.left(90)
@@ -72,7 +73,7 @@ def mid_triangle(x,y,z,a,c,color):
        turtle.left(z)
     # TODO: (Victoria) Paint a triangle.
 
-def left_triangle(x,y,a,c,color):
+def left_triangle(x, y, a, color):
     #TODO: (Victoria) Paint a purple triangle.
        turtle.up()
        turtle.setposition(x,y)
@@ -80,7 +81,7 @@ def left_triangle(x,y,a,c,color):
        turtle.color(color)
        turtle.begin_fill()
        turtle.right(90)
-       turtle.forward(c)
+       turtle.forward(a*math.sqrt(2))
        turtle.right(135)
        turtle.forward(a)
        turtle.right(90)
@@ -88,14 +89,14 @@ def left_triangle(x,y,a,c,color):
        turtle.right(45)
        turtle.end_fill()
 
-def up_triangle (x, y, a, c, color):
+def up_triangle (x, y, a, color):
     # TODO: (Maxim) Paint an blue triangle.
         turtle.up()
         turtle.setposition(x, y)
         turtle.down()
         turtle.color(color)
         turtle.begin_fill()
-        turtle.forward(c)
+        turtle.forward(a*math.sqrt(2))
         turtle.left(135)
         turtle.forward(a)
         turtle.left(90)
@@ -194,14 +195,16 @@ def helicopter ():
 
 def cock ():
     # TODO: (Alena) Paint a cock.
-    # down_triangle
-    # up_triangle
-    # left_triangle
-    # right_triangle
-    # mid_triangle
-    # rhomb
-    # parallelogram
-    pass
+    up_triangle(-104, 98, 70, "#9932CC")
+    turtle.left(45)
+    right_triangle(-104, 93, (70 * math.sqrt(2)), "#DC143C")
+    mid_triangle(-99 + 70 * math.sqrt(2), 98 - (70 * math.sqrt(2)) * 3 / 2, 0, 70 * math.sqrt(2), "#FF8C00")
+    square(-99 + 105 * math.sqrt(2), 103 - (70 * math.sqrt(2)) / 2, 45, (70 * math.sqrt(2)) / 2, "#00BFFF")
+    turtle.right(45)
+    up_triangle(-99 + 105 * math.sqrt(2), 108, 60, "#9ACD32")
+    left_triangle(-109 + 105 * math.sqrt(2) + 2 / 3 * (70 * math.sqrt(2)) / 2,
+                  98 - (70 * math.sqrt(2)) / 2 - 2 / 3 * (70 * math.sqrt(2)) / 2,
+                  (70 * math.sqrt(2) * math.sqrt(2)) / 3, "#EE82EE")
 
 def  left_running_man ():
     # TODO: (Alena) Paint a running man.
@@ -247,7 +250,6 @@ def mainsquare ():
     mid_triangle(71, 68, 135, 70.71, 100, 'green')
 
 def main ():
-    pass
 
 main()
 
