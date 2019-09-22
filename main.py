@@ -208,17 +208,17 @@ def cock ():
     left_triangle(-109 + 105 * math.sqrt(2) + 2 / 3 * (70 * math.sqrt(2)) / 2,
                   98 - (70 * math.sqrt(2)) / 2 - 2 / 3 * (70 * math.sqrt(2)) / 2,
                   (70 * math.sqrt(2) * math.sqrt(2)) / 3, "#EE82EE")
+    parallelogram(-104, 87, -90, (70 * math.sqrt(2)) * math.sqrt(2) / 3, (70 * math.sqrt(2)) * 3 / 4, "#FFD700")
 
 def  left_running_man ():
     # TODO: (Alena) Paint a running man.
-    # rhomb
-    # up_triangle
-    # left_triangle
-    # mid_triangle
-    # right_triangle
-    # down_triangle
-    # parallelogram
-    pass
+    circle(0, 105, 30, "#FF8C00")
+    mid_triangle(-102.5, 100, 45, 100, "#EE82EE")
+    mid_triangle(2.5, 0, -45, 100, "#00BFFF")
+    mid_triangle(72.5, -75, -135, 70, "#FFD700")
+    mid_triangle(49.5, -80, 45, 46, "#9932CC")
+    parallelogram(-52.5, -103, 45, 45, 70, "#DC143C")
+    mid_triangle(-30, -86.5, 135, 46, "#9ACD32")
 
 def right_running_man ():
     # TODO: (Maxim) Paint a running man.
@@ -252,8 +252,9 @@ def mainsquare ():
     mid_triangle(400+71, 275+68, 135, 70.71, "#9ACD32")
 
 def main ():
-    helicopter()
     cock()
+    left_running_man()
+    helicopter()
     mainsquare()
     ship()
 
