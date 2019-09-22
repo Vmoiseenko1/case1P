@@ -2,7 +2,6 @@
 # Developers : Moiseenko V. (%),
 #              Torgasheva A. (%),
 #              Setskov M. (%).
-from unittest.test.testmock.testpatch import function
 
 import turtle
 
@@ -56,11 +55,11 @@ def rhomb (x, y, z, color):
     turtle.end_fill()
     #TODO: (Alena) Paint a rhomb.
 
-def mid_triangle (x,y,a,c):
+def mid_triangle(x,y,a,c,color):
     turtle.up()
     turtle.setposition(x,y)
     turtle.down()
-    turtle.color()
+    turtle.color(color)
     turtle.begin_fill()
     turtle.right(45)
     turtle.forward(a)
@@ -73,7 +72,7 @@ def mid_triangle (x,y,a,c):
     # TODO: (Victoria) Paint a triangle.
     pass
 
-def left_triangle (x,y,a,c):
+def left_triangle(x,y,a,c, color):
     turtle.up()
     turtle.setposition(x,y)
     turtle.down()
@@ -85,7 +84,7 @@ def left_triangle (x,y,a,c):
     turtle.forward(a)
     turtle.right(90)
     turtle.forward(a)
-    turtle.right(135)
+    turtle.right(45)
     turtle.end_fill()
     #TODO: (Victoria) Paint a purple triangle.
     pass
