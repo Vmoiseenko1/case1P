@@ -122,128 +122,27 @@ def _parallelogram (x, y, z, a, c, color):
         turtle.right(z)
 
 
-def square (x, y, z, a, color):
+def square (x, y, a, color):
     #TODO (Maxim) Paint a square.
         turtle.up()
         turtle.setposition(x, y)
         turtle.down()
-        turtle.right(z)
         turtle.color(color)
         turtle.begin_fill()
         for i in range(4):
             turtle.forward(a)
             turtle.left(90)
         turtle.end_fill()
-        turtle.left(z)
-
 
 def circle(x, y, a, color):
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.color(color)
-    turtle.begin_fill()
-    turtle.circle(a)
-    turtle.end_fill()
+       turtle.up()
+       turtle.setposition(x, y)
+       turtle.down()
+       turtle.color(color)
+       turtle.begin_fill()
+       turtle.circle(a)
+       turtle.end_fill()
 
-# Pictures:
-def  rabbit ():
-    # TODO: (Victoria) Paint a rabbit.
-    # parallelogram()
-    # rhomb()
-    # up_triangle()
-    # mid_triangle()
-    # left_triangle()
-    # down_triangle()
-    # right_triangle()
-    pass
-
-def fish ():
-    # TODO: (Victoria) Paint a fish.
-    # up_triangle()
-    # rhomb()
-    # parallelogram()
-    # down_triangle()
-    # mid_triangle()
-    # right_triangle()
-    # left_triangle()
-    pass
-
-def spaceship ():
-    # TODO: (Victoria) Paint a spaceship.
-    # right_triangle()
-    # down_triangle()
-    # left_triangle()
-    # up_triangle()
-    # rhomb()
-    # parallelogram()
-    # mid_triangle()
-    pass
-
-def helicopter ():
-    # TODO: (Alena) Paint a helicopter.
-    # down_triangle()
-    # parallelogram()
-    # left_triangle()
-    # up_triangle()
-    # rhomb()
-    # mid_triangle()
-    # right_triangle()
-    pass
-
-def cock ():
-    # TODO: (Alena) Paint a cock.
-    # down_triangle
-    # up_triangle
-    # left_triangle
-    # right_triangle
-    # mid_triangle
-    # rhomb
-    # parallelogram
-    pass
-
-def  left_running_man ():
-    # TODO: (Alena) Paint a running man.
-    # rhomb
-    # up_triangle
-    # left_triangle
-    # mid_triangle
-    # right_triangle
-    # down_triangle
-    # parallelogram
-    pass
-
-def right_running_man ():
-    # TODO: (Maxim) Paint a running man.
-    # rhomb
-    # up_triangle
-    # left_triangle
-    # mid_triangle
-    # right_triangle
-    # down_triangle
-    # parallelogram
-    pass
-
-def ship ():
-    # TODO: (Maxim) Paint ship.
-    # rhomb
-    # up_triangle
-    # left_triangle
-    # mid_triangle
-    # right_triangle
-    # down_triangle
-    # parallelogram
-    pass
-
-def main ():
-    pass
-
-main()
-
-#DC143C - красный
-#9ACD32 - зеленый
-#00BFFF	- синий
-#FFD700 - желтый
-#FF8C00 - оранжевый
-#EE82EE - розовый
-#9932CC - фиолетовый
+up_triangle(-64, 98, 52.43, 70, "#9932CC")
+up_triangle(35, 95, 33, 40, "#FFD700")
+square(30, 64, 30, "#DC143C")
