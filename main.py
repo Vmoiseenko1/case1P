@@ -230,28 +230,28 @@ def right_running_man ():
 
 def ship ():
     # TODO: (Maxim) Paint ship.
-    # rhomb
-    # up_triangle
-    # left_triangle
-    # mid_triangle
-    # right_triangle
-    # down_triangle
-    # parallelogram
-    pass
+    right_triangle(-350, -200, 100, "#DC143C")
+    mid_triangle(30-350, 5-200, 225, 30, "#9932CC")
+    up_triangle(-350, -200-(5 + 100 * math.sqrt(2)), 50, "#EE82EE")
+    rhomb((2.5 + 70.71)-350, -200-(2.5 + 70.71), 50, "#FF8C00")
+    mid_triangle(-5-350, -20-200, 135, 100, "#FFD700")
+    down_triangle(-30-350, -150.42-200, 70, "#00BFFF")
+    parallelogram(-85-350, -150-200, 315, 50, 70, "#9ACD32")
 
 def mainsquare ():
     # TODO: (Maxim) Paint a mainsquare.
-    down_triangle(350+(-70.71), 250+140, 100, "#DC143C")
-    left_triangle(350+70.71, 250+140, 50, "#9932CC")
-    right_triangle(350+(-70.71), 250+140, 100, "#FFD700")
-    up_triangle(350+(-34.87), 250+32.616, 50, "#EE82EE")
-    rhomb(350+35.85, 250+103.85, 50, "#FF8C00")
-    parallelogram(350+(-71.85), 250+(-3.5), 0, 50, 70.71, "#00BFFF")
-    mid_triangle(350+71, 250+68, 135, 70.71, 'green')
+    down_triangle(400+(-70.71), 275+140, 100, "#DC143C")
+    left_triangle(400+70.71, 275+140, 50, "#9932CC")
+    right_triangle(400+(-70.71), 275+140, 100, "#FFD700")
+    up_triangle(400+(-34.87), 275+32.616, 50, "#EE82EE")
+    rhomb(400+35.85, 275+103.85, 50, "#FF8C00")
+    parallelogram(400+(-71.85), 275+(-3.5), 0, 50, 70.71, "#00BFFF")
+    mid_triangle(400+71, 275+68, 135, 70.71, "#9ACD32")
 
 def main ():
     cock()
     mainsquare()
+    ship()
 
 main()
 turtle.done()
