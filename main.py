@@ -241,17 +241,20 @@ def ship ():
 
 def mainsquare ():
     # TODO: (Maxim) Paint a mainsquare.
-    down_triangle(-70.71, 140, 100, "#DC143C")
-    left_triangle(70.71, 140, 50, "#9932CC")
-    right_triangle(-70.71, 140, 100, "#FFD700")
-    up_triangle(-34.87, 32.616, 50, "#EE82EE")
-    rhomb(35.85, 103.85, 50, "#FF8C00")
-    parallelogram(-71.85, -3.5, 0, 50, 70.71, "#00BFFF")
-    mid_triangle(71, 68, 135, 70.71, 'green')
+    down_triangle(350+(-70.71), 250+140, 100, "#DC143C")
+    left_triangle(350+70.71, 250+140, 50, "#9932CC")
+    right_triangle(350+(-70.71), 250+140, 100, "#FFD700")
+    up_triangle(350+(-34.87), 250+32.616, 50, "#EE82EE")
+    rhomb(350+35.85, 250+103.85, 50, "#FF8C00")
+    parallelogram(350+(-71.85), 250+(-3.5), 0, 50, 70.71, "#00BFFF")
+    mid_triangle(350+71, 250+68, 135, 70.71, 'green')
 
 def main ():
+    cock()
+    mainsquare()
 
 main()
+turtle.done()
 
 #DC143C - красный
 #9ACD32 - зеленый
