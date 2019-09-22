@@ -146,3 +146,4 @@ def circle(x, y, a, color):
 up_triangle(-64, 98, 52.43, 70, "#9932CC")
 up_triangle(35, 95, 33, 40, "#FFD700")
 square(30, 64, 30, "#DC143C")
+turtle.done()

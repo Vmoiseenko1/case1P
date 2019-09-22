@@ -55,23 +55,24 @@ def rhomb (x, y, z, color):
        turtle.right(45)
        turtle.end_fill()
 
-def mid_triangle(x,y,a,c,color):
-    # TODO: (Victoria) Paint a triangle.
+def mid_triangle(x,y,z,a,c,color):
        turtle.up()
-       turtle.setposition(x,y)
+       turtle.setposition(x, y)
        turtle.down()
+       turtle.right(z)
        turtle.color(color)
        turtle.begin_fill()
-       turtle.right(45)
-       turtle.forward(a)
-       turtle.right(135)
        turtle.forward(c)
-       turtle.right(135)
+       turtle.left(135)
        turtle.forward(a)
-       turtle.right(45)
+       turtle.left(90)
+       turtle.forward(a)
+       turtle.left(135)
        turtle.end_fill()
+       turtle.done()
+    # TODO: (Victoria) Paint a triangle.
 
-def left_triangle(x,y,a,c, color):
+def left_triangle(x,y,a,c,color):
     #TODO: (Victoria) Paint a purple triangle.
        turtle.up()
        turtle.setposition(x,y)
@@ -102,7 +103,7 @@ def up_triangle (x, y, a, c, color):
         turtle.left(135)
         turtle.end_fill()
 
-def _parallelogram (x, y, z, a, c, color):
+def parallelogram (x, y, z, a, c, color):
     # TODO: (Maxim) Paint a parallelogram.
         turtle.up()
         turtle.setposition(x, y)
