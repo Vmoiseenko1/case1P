@@ -69,7 +69,7 @@ def mid_triangle(x,y,z,a,c,color):
        turtle.forward(a)
        turtle.left(135)
        turtle.end_fill()
-       turtle.done()
+       turtle.left(z)
     # TODO: (Victoria) Paint a triangle.
 
 def left_triangle(x,y,a,c,color):
