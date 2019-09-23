@@ -192,42 +192,42 @@ def spaceship ():
 
     pass
 
-def helicopter ():
+def helicopter (x, y):
     # TODO: (Alena) Paint a helicopter.
-    parallelogram(50, 100, 0, 50, 65, "#9ACD32")
-    up_triangle(45 - 70 * math.sqrt(2), 100, 70, "#DC143C")
-    right_triangle(50, 95, 100, "#00BFFF")
-    left_triangle(45, 95, 100, "#FFD700")
-    mid_triangle(40 - (100 * math.sqrt(2)) * 1 / 4 - 50 * math.sqrt(2),
-                 95 - (100 * math.sqrt(2)) * 3 / 4, 0, 50, "#FF8C00")
-    down_triangle(35 - (100 * math.sqrt(2)) * 1 / 4 - 50 * math.sqrt(2) * 3 / 2,
-                  95 - (100 * math.sqrt(2)) / 2, 50, "#EE82EE")
-    rhomb(30 - (100 * math.sqrt(2)) * 1 / 4 - 50 * math.sqrt(2) * 3 / 2 - 50 * math.sqrt(2) / 4,
-          95 - (100 * math.sqrt(2)) / 2 + 50 * math.sqrt(2) * 3 / 4, 50, "#9932CC")
+    parallelogram(50 + x, 100 + y, 0, 50, 58.5, "#9ACD32")
+    up_triangle(45 - 63 * math.sqrt(2) + x, 100 + y, 63, "#DC143C")
+    right_triangle(50 + x, 95 + y, 90, "#00BFFF")
+    left_triangle(45 + x, 95 + y, 90, "#FFD700")
+    mid_triangle(40 - (90 * math.sqrt(2)) * 1 / 4 - 45 * math.sqrt(2) + x,
+                 95 - (90 * math.sqrt(2)) * 3 / 4 + y, 0, 45, "#FF8C00")
+    down_triangle(35 - (90 * math.sqrt(2)) * 1 / 4 - 45 * math.sqrt(2) * 3 / 2 + x,
+                  95 - (90 * math.sqrt(2)) / 2 + y, 45, "#EE82EE")
+    rhomb(30 - (90 * math.sqrt(2)) * 1 / 4 - 45 * math.sqrt(2) * 3 / 2 - 45 * math.sqrt(2) / 4 + x,
+          95 - (90 * math.sqrt(2)) / 2 + 45 * math.sqrt(2) * 3 / 4 + y, 45, "#9932CC")
 
 def cock (x, y):
     # TODO: (Alena) Paint a cock.
-    up_triangle(-104 + x, 98 + y, 50, "#9932CC")
+    up_triangle(-104 + x, 98 + y, 75, "#9932CC")
     turtle.left(45)
-    right_triangle(-104 + x, 93 + y, (50 * math.sqrt(2)), "#DC143C")
-    mid_triangle(-99 + 50 * math.sqrt(2) + x, 98 - (50 * math.sqrt(2)) * 3 / 2 + y, 0, 50 * math.sqrt(2), "#FF8C00")
-    square(-99 + 75 * math.sqrt(2) + x, 103 - (50 * math.sqrt(2)) / 2 + y, 45, (50 * math.sqrt(2)) / 2, "#00BFFF")
+    right_triangle(-104 + x, 93 + y, (75 * math.sqrt(2)), "#DC143C")
+    mid_triangle(-99 + 75 * math.sqrt(2) + x, 98 - (75 * math.sqrt(2)) * 3 / 2 + y, 0, 75 * math.sqrt(2), "#FF8C00")
+    square(-99 + 112.5 * math.sqrt(2) + x, 103 - (75 * math.sqrt(2)) / 2 + y, 45, (75 * math.sqrt(2)) / 2, "#00BFFF")
     turtle.right(45)
-    up_triangle(-99 + 75 * math.sqrt(2) + x, 108 + y, 40, "#9ACD32")
-    left_triangle(-104 + 75 * math.sqrt(2) + 2 / 3 * (50 * math.sqrt(2)) / 2 + x,
-                  98 - (50 * math.sqrt(2)) / 2 - 2 / 3 * (50 * math.sqrt(2)) / 2 + y,
-                  (50 * math.sqrt(2) * math.sqrt(2)) / 3, "#EE82EE")
-    parallelogram(-104 + x, 87 + y, -90, (50 * math.sqrt(2)) * math.sqrt(2) / 3, (50 * math.sqrt(2)) * 2 / 3, "#FFD700")
+    up_triangle(-99 + 112.5 * math.sqrt(2) + x, 108 + y, 55, "#9ACD32")
+    left_triangle(-114 + 112.5 * math.sqrt(2) + 2 / 3 * (75 * math.sqrt(2)) / 2 + x,
+                  95 - (75 * math.sqrt(2)) / 2 - 2 / 3 * (75 * math.sqrt(2)) / 2 + y,
+                  (75 * math.sqrt(2) * math.sqrt(2)) / 3, "#EE82EE")
+    parallelogram(-104 + x, 87 + y, -90, (75 * math.sqrt(2)) * math.sqrt(2) / 3, (75 * math.sqrt(2)) * 2 / 3, "#FFD700")
 
-def  left_running_man ():
+def  left_running_man (x, y):
     # TODO: (Alena) Paint a running man.
-    circle(0, 105, 30, "#FF8C00")
-    mid_triangle(-102.5, 100, 45, 100, "#EE82EE")
-    mid_triangle(2.5, 0, -45, 100, "#00BFFF")
-    mid_triangle(72.5, -75, -135, 70, "#FFD700")
-    mid_triangle(49.5, -80, 45, 46, "#9932CC")
-    parallelogram(-52.5, -103, 45, 45, 70, "#DC143C")
-    mid_triangle(-30, -86.5, 135, 46, "#9ACD32")
+    circle(0 + x, 105 + y, 30, "#FF8C00")
+    mid_triangle(-95 + x, 100 - 5 + y, 45, 90, "#EE82EE")
+    mid_triangle(0 + x, 5 + y, -45, 90, "#00BFFF")
+    mid_triangle(60 + x, -60 + y, -135, 60, "#FFD700")
+    mid_triangle(39.5 + x, -60 - 5 + y, 45, 36, "#9932CC")
+    parallelogram(-47.5 + x, -80 + y, 45, 35, 60, "#DC143C")
+    mid_triangle(-30 + x, -67.5 + y, 135, 36, "#9ACD32")
 
 def right_running_man ():
     # TODO: (Maxim) Paint a running man.
@@ -240,15 +240,15 @@ def right_running_man ():
     # parallelogram
     pass
 
-def ship ():
+def ship (x, y):
     # TODO: (Maxim) Paint ship.
-    right_triangle(-350, -200, 100, "#DC143C")
-    mid_triangle(30-350, 5-200, 225, 30, "#9932CC")
-    up_triangle(-350, -200-(5 + 100 * math.sqrt(2)), 50, "#EE82EE")
-    rhomb((2.5 + 70.71)-350, -200-(2.5 + 70.71), 50, "#FF8C00")
-    mid_triangle(-5-350, -20-200, 135, 100, "#FFD700")
-    down_triangle(-30-350, -150.42-200, 70, "#00BFFF")
-    parallelogram(-85-350, -150-200, 315, 50, 70, "#9ACD32")
+    right_triangle(-350 + x, -200 + y, 100, "#DC143C")
+    mid_triangle(30 - 350 + x, 5 - 200 + y, 225, 30, "#9932CC")
+    up_triangle(-350 + x, -200-(5 + 100 * math.sqrt(2)) + y, 50, "#EE82EE")
+    rhomb((2.5 + 70.71) - 350 + x, -200 - (2.5 + 70.71) + y, 50, "#FF8C00")
+    mid_triangle(-5 - 350 + x, -20 - 200 + y, 135, 100, "#FFD700")
+    down_triangle(-30 - 350 + x, -150.42 - 200 + y, 70, "#00BFFF")
+    parallelogram(-85 - 350 + x, -150 - 200 + y, 315, 50, 70, "#9ACD32")
 
 def mainsquare (x, y):
     # TODO: (Maxim) Paint a mainsquare.
@@ -261,12 +261,12 @@ def mainsquare (x, y):
     mid_triangle(71 + x, 68 - y, 135, 70.71, "#9ACD32")
 
 def main ():
+    square(21, 90, 180, 141, "grey")
+    ship(100, 75)
+    cock(-350, 225)
+    left_running_man(-50, 225)
+    helicopter(200, -25)
     mainsquare(-50, 50)
-    cock(-200, 150)
-    left_running_man()
-    helicopter()
-    mainsquare()
-    ship()
 
 main()
 turtle.done()
