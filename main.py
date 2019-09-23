@@ -152,35 +152,44 @@ def circle(x, y, a, color):
 # Pictures:
 def  rabbit ():
     # TODO: (Victoria) Paint a rabbit.
-    # parallelogram()
-    # rhomb()
-    # up_triangle()
-    # mid_triangle()
-    # left_triangle()
-    # down_triangle()
-    # right_triangle()
+    turtle.left(15)
+    parallelogram(140, 140, 120, 100, 150, '#9ACD32')
+    turtle.right(105)
+    square(190, 135, 90, 100, '#FF8C00')
+    turtle.left(135)
+    down_triangle(-115, -115, 200, '#DC143C')
+    turtle.right(270)
+    right_triangle(-115, -320, 200, '#FFD700')
+    turtle.left(90)
+    up_triangle(45, -170, 150, '#00BFFF')
+    turtle.right(180)
+    left_triangle(55, -220, 100, '#9932CC')
+    turtle.right(315)
+    mid_triangle(95, -59.3, 180, 100, '#EE82EE')
     pass
 
 def fish ():
     # TODO: (Victoria) Paint a fish.
-    # up_triangle()
-    # rhomb()
-    # parallelogram()
-    # down_triangle()
-    # mid_triangle()
-    # right_triangle()
-    # left_triangle()
+    turtle.left(15)
+    parallelogram(-80, 140, 120, 100, 150, '#9ACD32')
+    turtle.left(120)
+    left_triangle(-280, 33.2, 100, '#9932CC')
+    turtle.right(90)
+    mid_triangle(-175, 35, 0, 100, '#EE82EE')
+    turtle.right(45)
+    rhomb(0, 208.3, 100, '#FF8C00')
+    turtle.left(135)
+    down_triangle(80, 138.2, 200, '#DC143C')
+    turtle.left(180)
+    right_triangle(80, 133.2, 200, '#FFD700')
+    turtle.right(45)
+    up_triangle(85, 233.3, 150, '#00BFFF')
+
     pass
 
 def spaceship ():
     # TODO: (Victoria) Paint a spaceship.
-    # right_triangle()
-    # down_triangle()
-    # left_triangle()
-    # up_triangle()
-    # rhomb()
-    # parallelogram()
-    # mid_triangle()
+
     pass
 
 def helicopter ():
