@@ -205,19 +205,19 @@ def helicopter ():
     rhomb(30 - (100 * math.sqrt(2)) * 1 / 4 - 50 * math.sqrt(2) * 3 / 2 - 50 * math.sqrt(2) / 4,
           95 - (100 * math.sqrt(2)) / 2 + 50 * math.sqrt(2) * 3 / 4, 50, "#9932CC")
 
-def cock ():
+def cock (x, y):
     # TODO: (Alena) Paint a cock.
-    up_triangle(-104, 98, 70, "#9932CC")
+    up_triangle(-104 + x, 98 + y, 50, "#9932CC")
     turtle.left(45)
-    right_triangle(-104, 93, (70 * math.sqrt(2)), "#DC143C")
-    mid_triangle(-99 + 70 * math.sqrt(2), 98 - (70 * math.sqrt(2)) * 3 / 2, 0, 70 * math.sqrt(2), "#FF8C00")
-    square(-99 + 105 * math.sqrt(2), 103 - (70 * math.sqrt(2)) / 2, 45, (70 * math.sqrt(2)) / 2, "#00BFFF")
+    right_triangle(-104 + x, 93 + y, (50 * math.sqrt(2)), "#DC143C")
+    mid_triangle(-99 + 50 * math.sqrt(2) + x, 98 - (50 * math.sqrt(2)) * 3 / 2 + y, 0, 50 * math.sqrt(2), "#FF8C00")
+    square(-99 + 75 * math.sqrt(2) + x, 103 - (50 * math.sqrt(2)) / 2 + y, 45, (50 * math.sqrt(2)) / 2, "#00BFFF")
     turtle.right(45)
-    up_triangle(-99 + 105 * math.sqrt(2), 108, 60, "#9ACD32")
-    left_triangle(-109 + 105 * math.sqrt(2) + 2 / 3 * (70 * math.sqrt(2)) / 2,
-                  98 - (70 * math.sqrt(2)) / 2 - 2 / 3 * (70 * math.sqrt(2)) / 2,
-                  (70 * math.sqrt(2) * math.sqrt(2)) / 3, "#EE82EE")
-    parallelogram(-104, 87, -90, (70 * math.sqrt(2)) * math.sqrt(2) / 3, (70 * math.sqrt(2)) * 3 / 4, "#FFD700")
+    up_triangle(-99 + 75 * math.sqrt(2) + x, 108 + y, 40, "#9ACD32")
+    left_triangle(-104 + 75 * math.sqrt(2) + 2 / 3 * (50 * math.sqrt(2)) / 2 + x,
+                  98 - (50 * math.sqrt(2)) / 2 - 2 / 3 * (50 * math.sqrt(2)) / 2 + y,
+                  (50 * math.sqrt(2) * math.sqrt(2)) / 3, "#EE82EE")
+    parallelogram(-104 + x, 87 + y, -90, (50 * math.sqrt(2)) * math.sqrt(2) / 3, (50 * math.sqrt(2)) * 2 / 3, "#FFD700")
 
 def  left_running_man ():
     # TODO: (Alena) Paint a running man.
@@ -250,18 +250,19 @@ def ship ():
     down_triangle(-30-350, -150.42-200, 70, "#00BFFF")
     parallelogram(-85-350, -150-200, 315, 50, 70, "#9ACD32")
 
-def mainsquare ():
+def mainsquare (x, y):
     # TODO: (Maxim) Paint a mainsquare.
-    down_triangle(400+(-70.71), 275+140, 100, "#DC143C")
-    left_triangle(400+70.71, 275+140, 50, "#9932CC")
-    right_triangle(400+(-70.71), 275+140, 100, "#FFD700")
-    up_triangle(400+(-34.87), 275+32.616, 50, "#EE82EE")
-    rhomb(400+35.85, 275+103.85, 50, "#FF8C00")
-    parallelogram(400+(-71.85), 275+(-3.5), 0, 50, 70.71, "#00BFFF")
-    mid_triangle(400+71, 275+68, 135, 70.71, "#9ACD32")
+    down_triangle(-70.71 + x, 140 - y, 100, "#DC143C")
+    left_triangle(70.71 + x, 140 - y, 50, "#9932CC")
+    right_triangle(-70.71 + x, 140 - y, 100, "#FFD700")
+    up_triangle(-34.87 + x, 32.616 - y, 50, "#EE82EE")
+    rhomb(35.85 + x, 103.85 - y, 50, "#FF8C00")
+    parallelogram(-72 + x, -3.5 - y, 0, 50, 70.71, "#00BFFF")
+    mid_triangle(71 + x, 68 - y, 135, 70.71, "#9ACD32")
 
 def main ():
-    cock()
+    mainsquare(-50, 50)
+    cock(-200, 150)
     left_running_man()
     helicopter()
     mainsquare()
