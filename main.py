@@ -261,7 +261,6 @@ def mainsquare (x, y):
     mid_triangle(71 + x, 68 - y, 135, 70.71, "#9ACD32")
 
 def main ():
-    square(21, 90, 180, 141, "grey")
     ship(100, 75)
     cock(-350, 225)
     left_running_man(-50, 225)
