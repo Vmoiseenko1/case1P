@@ -186,8 +186,19 @@ def fish (x, y):
     up_triangle(-95 + x, 133.3 + y, 75, '#00BFFF')
     turtle.left(90)
 
-def spaceship ():
+def spaceship (x, y):
     # TODO: (Victoria) Paint a spaceship.
+    mid_triangle(-100 + x, 100 + y, 0, 50, '#EE82EE')
+    turtle.right(45)
+    up_triangle(-100 + x, 95 + y, 70.71, '#00BFFF')
+    turtle.left(45)
+    right_triangle(-100 + x, 85 + y, 100, '#FFD700')
+    turtle.right(90)
+    down_triangle(-29.29 + x, 7.4 + y, 100, '#DC143C')
+    turtle.right(90)
+    rhomb(-100 + x, -140.7 + y, 50, '#FF8C00')
+    left_triangle(-140 + x, -180 + y, 50, '#9932CC')
+    parallelogram(-20 + x, -70 + y, 90, 50, 70.71, '#9ACD32')
 
     pass
 
@@ -255,6 +266,8 @@ def main ():
     fish(-150, -50)
     ship(25, 75)
     cock(-350, 225)
+    spaceship(200,-200)
+    rabbit(150,100)
 
 main()
 turtle.done()
