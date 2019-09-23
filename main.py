@@ -1,7 +1,7 @@
 # Case - study #1
 # Developers : Moiseenko V. (%),
-#              Torgasheva A. (%),
-#              Setskov M. (%).
+#              Torgasheva A. (40%),
+#              Setskov M. (25%).
 
 import turtle
 import math
@@ -57,6 +57,7 @@ def rhomb (x, y, a, color):
        turtle.end_fill()
 
 def mid_triangle(x, y, z, a, color):
+    # TODO: (Victoria) Paint a triangle.
        turtle.up()
        turtle.setposition(x, y)
        turtle.down()
@@ -71,7 +72,6 @@ def mid_triangle(x, y, z, a, color):
        turtle.left(135)
        turtle.end_fill()
        turtle.left(z)
-    # TODO: (Victoria) Paint a triangle.
 
 def left_triangle(x, y, a, color):
     # TODO: (Victoria) Paint a purple triangle.
@@ -168,24 +168,23 @@ def  rabbit ():
     mid_triangle(95, -59.3, 180, 100, '#EE82EE')
     pass
 
-def fish ():
+def fish (x, y):
     # TODO: (Victoria) Paint a fish.
     turtle.left(15)
-    parallelogram(-80, 140, 120, 100, 150, '#9ACD32')
+    parallelogram(-180 + x, 90 + y, 120, 50, 70.71, '#9ACD32')
     turtle.left(120)
-    left_triangle(-280, 33.2, 100, '#9932CC')
+    left_triangle(-285 + x, 33.2 + y, 50, '#9932CC')
     turtle.right(90)
-    mid_triangle(-175, 35, 0, 100, '#EE82EE')
+    mid_triangle(-230 + x, 35 + y, 0, 50, '#EE82EE')
     turtle.right(45)
-    rhomb(0, 208.3, 100, '#FF8C00')
+    rhomb(-140 + x, 123.3 + y, 50, '#FF8C00')
     turtle.left(135)
-    down_triangle(80, 138.2, 200, '#DC143C')
+    down_triangle(-100 + x, 93.2 + y, 100, '#DC143C')
     turtle.left(180)
-    right_triangle(80, 133.2, 200, '#FFD700')
+    right_triangle(-100 + x, 83.2 + y, 100, '#FFD700')
     turtle.right(45)
-    up_triangle(85, 233.3, 150, '#00BFFF')
-
-    pass
+    up_triangle(-95 + x, 133.3 + y, 75, '#00BFFF')
+    turtle.left(90)
 
 def spaceship ():
     # TODO: (Victoria) Paint a spaceship.
@@ -229,17 +228,6 @@ def  left_running_man (x, y):
     parallelogram(-47.5 + x, -80 + y, 45, 35, 60, "#DC143C")
     mid_triangle(-30 + x, -67.5 + y, 135, 36, "#9ACD32")
 
-def right_running_man ():
-    # TODO: (Maxim) Paint a running man.
-    # rhomb
-    # up_triangle
-    # left_triangle
-    # mid_triangle
-    # right_triangle
-    # down_triangle
-    # parallelogram
-    pass
-
 def ship (x, y):
     # TODO: (Maxim) Paint ship.
     right_triangle(-350 + x, -200 + y, 100, "#DC143C")
@@ -252,20 +240,21 @@ def ship (x, y):
 
 def mainsquare (x, y):
     # TODO: (Maxim) Paint a mainsquare.
-    down_triangle(-70.71 + x, 140 - y, 100, "#DC143C")
-    left_triangle(70.71 + x, 140 - y, 50, "#9932CC")
-    right_triangle(-70.71 + x, 140 - y, 100, "#FFD700")
-    up_triangle(-34.87 + x, 32.616 - y, 50, "#EE82EE")
-    rhomb(35.85 + x, 103.85 - y, 50, "#FF8C00")
-    parallelogram(-72 + x, -3.5 - y, 0, 50, 70.71, "#00BFFF")
-    mid_triangle(71 + x, 68 - y, 135, 70.71, "#9ACD32")
+    down_triangle(-70.71 + x, 140 + y, 100, "#DC143C")
+    left_triangle(70.71 + x, 140 + y, 50, "#9932CC")
+    right_triangle(-70.71 + x, 140 + y, 100, "#FFD700")
+    up_triangle(-34.87 + x, 32.616 + y, 50, "#EE82EE")
+    rhomb(35.85 + x, 103.85 + y, 50, "#FF8C00")
+    parallelogram(-72 + x, -3.5 + y, 0, 50, 70.71, "#00BFFF")
+    mid_triangle(71 + x, 68 + y, 135, 70.71, "#9ACD32")
 
 def main ():
-    ship(100, 75)
+    left_running_man(-50, 125)
+    mainsquare(-50, -175)
+    helicopter(225, -175)
+    fish(-150, -50)
+    ship(25, 75)
     cock(-350, 225)
-    left_running_man(-50, 225)
-    helicopter(200, -25)
-    mainsquare(-50, 50)
 
 main()
 turtle.done()
