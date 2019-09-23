@@ -1,5 +1,5 @@
 # Case - study #1
-# Developers : Moiseenko V. (%),
+# Developers : Moiseenko V. (30%),
 #              Torgasheva A. (40%),
 #              Setskov M. (25%).
 
